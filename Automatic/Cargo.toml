@@ -1,0 +1,19 @@
+[package]
+name = "wireguard-vpn"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+defguard_wireguard_rs = "0.4.2"
+env_logger = "0.11"
+x25519-dalek = { version = "2.0", features = ["getrandom", "static_secrets"] }
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+netlink-packet-core = "0.7"
+netlink-packet-generic = "0.3"
+netlink-packet-route = "0.17"
+netlink-packet-utils = "0.5"
+netlink-packet-wireguard = "0.2"
+netlink-sys = "0.8"
+base64 = "0.21"
+thiserror = "1.0"
